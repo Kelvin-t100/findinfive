@@ -407,10 +407,11 @@ function pickNewWord() {
     const word = available[Math.floor(Math.random() * available.length)];
     usedWords.push(word);
 
-    localStorage.setItem("usedWords", JSON.stringify(usedWords));
+  //  localStorage.setItem("usedWords", JSON.stringify(usedWords));
     localStorage.setItem("secretWord", word);
 
     return word;
 }
+
 
 
