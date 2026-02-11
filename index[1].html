@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>findinfive</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+
+    <h1>findinfive</h1>
+
+    <p>
+  Current Streak: <span id="currentStreak">0</span> |
+  Best Streak: <span id="bestStreak">0</span>
+   </p>
+   
+    <p>Tries left: <span id="tries">5</span></p>
+
+    <input type="text" id="guess" placeholder="type a word" />
+
+    <button id ="submit">Submit</button>
+    <p id="message"></p>
+    <div id="grid"></div>
+    <!--<button id="playAgain" style="display:none;">Play Again</button>-->
+
+
+<!-- END GAME MODAL -->
+<div id="overlay" class="overlay hidden"></div>
+
+<div id="endModal" class="modal hidden">
+<p id="correctWordText" class="hidden"></p>
+
+<h2 id="endTitle"></h2>
+
+    <p>
+        Current Streak: <span id="modalCurrentStreak">0</span><br>
+        Best Streak: <span id="modalBestStreak">0</span>
+    </p>
+    <button id="watchAdBtn">Watch ad to get +2 tries</button>
+    <button id="playAgain">Play Again</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
